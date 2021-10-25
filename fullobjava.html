@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="me">
+
+<head>
+	<script>
+        function random_function()
+        {
+            var a=document.getElementById("input").value;
+            if(a==="Stan")
+            {
+                var arr=["Jednosoban","Dvosoban","Trosoban","Visesoban"];
+                document.getElementById("kompleks").style.visibility="hidden";
+                document.getElementById("brstan").style.visibility="hidden";
+            }
+            else if(a==="Kuća")
+            {
+                var arr=["Vikednica","Dvospratna","Bungalov"];
+                document.getElementById("kompleks").style.visibility="hidden";
+                document.getElementById("brstan").style.visibility="hidden";
+            }
+            else if(a==="Vila")
+            {
+                var arr=["Luksuzna","Sirotinjska","Tuzna"];
+                document.getElementById("kompleks").style.visibility="hidden";
+                document.getElementById("brstan").style.visibility="hidden";
+            }
+            else if(a==="Kompleks")
+            {
+                var arr=["/"];
+                document.getElementById("kompleks").style.visibility="visible";
+                document.getElementById("brstan").style.visibility="visible";
+            }
+            else if(a==="Stan u kompleksu")
+            {
+                var arr=["Jednosoban","Dvosoban","Trosoban","Visesoban"];
+                document.getElementById("kompleks").style.visibility="visible";
+                document.getElementById("brstan").style.visibility="hidden";
+            }
+            else if(a!="Stan" && a!="Kuća" && a!="Vila")
+            
+            {
+                var arr=["/"];
+                document.getElementById("kompleks").style.visibility="hidden";
+                document.getElementById("brstan").style.visibility="hidden";
+            }
+           
+         
+            var string="";
+         
+            for(i=0;i<arr.length;i++)
+            {
+                string=string+"<option value="+arr[i]+">"+arr[i]+"</option>";
+            }
+            document.getElementById("output").innerHTML=string;
+        }
+    </script>
+    <meta name="robots" content="index, follow" />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Home4You" />
+    <title>Home4You | Real Estate Agency in Montenegro</title>
+
+
+
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="theme/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="theme/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="theme/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="theme/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="theme/css/jquery.fancybox.min.css">
+
+    <link type="text/css" rel="stylesheet" href="theme/css/main.css">
+
+    
+	
+
+
+	<!--JS CDNs-->
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+	<style>
+
+        .mapa3 {
+           width: 90%;
+           margin:5% 5% 5% 5%;
+           border: 3px solid #d8c964;
+           border-radius: 50px;
+        
+            
+        }
+            
+            </style>
+    <!--<script src='https://www.google.com/recaptcha/api.js'></script>-->
+
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2883867285159996');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" src="https://www.facebook.com/tr?id=2883867285159996&ev=PageView
+&noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    <style>
+        #sync1 .owl-nav .owl-next,
+        #sync1 .owl-nav .owl-prev {
+            position: absolute !important;
+            bottom: 40px !important;
+            z-index: 1000 !important;
+            color: #ccd91a !important;
+            opacity: 0.5;
+            font-size: 50px !important;
+            font-weight: 300;
+            background: transparent !important;
+        }
+
+        #sync1 .owl-nav .owl-next:hover,
+        #sync1 .owl-nav .owl-prev:hover {
+            opacity: 1;
+        }
+
+        #sync1 .owl-nav .owl-next {
+            right: 10px;
+        }
+
+        #sync1 .owl-nav .owl-prev {
+            right: 60px;
+        }
+
+        #sync1 .owl-nav {
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        @media(max-width:991px) {
+
+            #sync1 .owl-nav .owl-next,
+            #sync1 .owl-nav .owl-prev {
+                display: none;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        
+        <!--end menu-wrap-->
+
+        
+        <!--end slider-wrap-->
+    </header>
+
+    <div class="tijelo">
+    <div class="row">
+		<div class="col-md-12 col-md-offset-3">
+			<form id="form" >
+
+				<ul id="progressbar">
+					<li class="active">Osnovne informacije</li>
+					<li>Fotografije</li>
+					<li>Lokacija</li>
+					<li>Detalji</li>
+				</ul>
+
+				<fieldset>
+					<h2 class="title">Podaci o vlasniku</h2>
+					<input type="text" id="ime" class="input1" name="FirstName" placeholder="Ime Vlasnika" required="required">
+					<input type="text" id="prezime" name="LastName"class="input1" placeholder="Prezime Vlasnika" required="required">
+					<input type="text" id="tel" name="LastName" class="input1"placeholder="Broj telefona vlasnika" required="required">
+					<input type="email" id="email" name="LastName" class="input1"placeholder="Email vlasnika" required="required">
+					<input type="text" id="broj" name="LastName" class="input1"placeholder="Identifikacioni broj vlasnika" required="required">
+					<h2 class="title">Slika identifikacionog dokumenta</h2>
+					<input type="file" multiple id="broj" name="LastName" class="input1"placeholder="Slika identifikacionog dokumenta" required="required" >
+					<h2 class="title">Osnovne informacije</h2>
+					<input type="text" id="naslov" name="naslov" class="input1"placeholder="Naslov" required="required">
+					<input type="text" id="cijena" name="cijena"class="input1" placeholder="Cijena" required="required">
+					<textarea id="opis" class="textarea1" placeholder="Opis"></textarea>
+					<div class="custom_select1">
+						<select name="vrsta" id="input" onchange="random_function()">
+                            <option value="" selected="selected" disabled>Tip</option>
+                            <option >Stan</option>
+                            <option >Kuća</option>
+                            <option >Poslovni prostor</option>
+                            <option >Lokal</option>
+                            <option >Poslovna zgrada</option>
+                            <option >Ugostiteljski objekat</option>
+                            <option >Kompleks</option>
+                            <option >Stan u kompleksu</option>
+                            <option >Plac</option>
+                            <option >Vikendica</option>
+                            <option >Magacin</option>
+                            <option >Hala</option>
+                            <option >Garaža</option>
+                            <option >Stambeno-poslovni objekat</option>
+                            <option >Stambeni objekat</option>
+                            <option >Hotel</option>
+                            <option >Vila</option>
+                            <option >Ostalo</option>
+                        </select>
+					  </div>
+					  <div class="custom_select1">
+						<select  name="struktura" id="output" onchange="random_function1()"></select>
+					  </div>
+					  
+					  <div class="custom_select1">
+						<select>
+						  <option disabled selected value="">Uvrstena u</option>
+						  <option value="">Prodaja</option>
+						  <option value="">Izdavanje</option>
+						  <option value="">Dnevni najam</option>
+						  <option value="">Ekskluzivno</option>
+						  <option value="">Sezonski</option>
+						  
+						  <option value="">Drugo</option>
+						</select>
+					  </div>
+					  <div id="kompleks" class="kompleks">
+                          
+						<input type="text" id="komp" class="input1" name="komp" placeholder="Ime Kompleksa" required="required">
+  <div class="brstan" id="brstan">
+					  <input type="text" id="brstanova" name="brstanova"class="input1" placeholder="Broj stanova u kompleksu" required="required">
+				  </div>
+				  </div>
+					
+                    <h2 class="title">Basic informations</h2>
+					
+					<input type="text" id="naslov" name="LastName" class="input1"placeholder="Title" required="required">
+					<input type="text" id="cijena" name="LastName"class="input1" placeholder="Price" required="required">
+					<textarea id="opis" class="textarea1" placeholder="Details"></textarea>
+					<div class="custom_select1">
+						<select >
+						  <option disabled selected value="">Kategorija</option >
+						  <option value="">Stan</option>
+						  <option value="">Kuca</option>
+						  <option value="">Poslovni prostor</option>
+						  <option value="">Poslovna zgrada</option>
+						  <option value="">Restoran</option>
+						  <option value="">Plac </option>
+						  <option value="">Vikendica</option>
+						  <option value="">Magacin</option>
+						  <option value="">Hala</option>
+						  <option value="">Garaza</option>
+						  <option value="">Poslovni objekat</option>
+						  <option value="">Stambeni objekat</option>
+						  <option value="">Parking</option>
+						  <option value="">Vila</option>
+						  <option value="">Ostalo</option>
+						</select>
+					  </div>
+					  <div class="custom_select1">
+						<select>
+						  <option disabled selected value="">Struktura</option>
+						  <option value="">Garsonjera</option>
+						  <option value="">Jednosoban</option>
+						  <option value="">Dvosoban</option>
+						  <option value="">Trosoban</option>
+						  <option value="">Cetvorosoban</option>
+						  
+						  <option value="">Vise</option>
+						</select>
+					  </div>
+					  <div class="custom_select1">
+						<select>
+						  <option disabled selected value="">Uvrstena u</option>
+						  <option value="">Prodaja</option>
+						  <option value="">Izdavanje</option>
+						  <option value="">Dnevni najam</option>
+						  <option value="">Ekskluzivno</option>
+						  <option value="">Sezonski</option>
+						  
+						  <option value="">Drugo</option>
+						</select>
+					  </div>
+					
+					
+                    <h2 class="title">Osnovnije infarmaicje</h2>
+					
+					<input type="text" id="naslov" name="LastName" class="input1"placeholder="Nasljov" required="required">
+					<input type="text" id="cijena" name="LastName"class="input1" placeholder="Kostanje" required="required">
+					<textarea id="opis" class="textarea1" placeholder="Apis"></textarea>
+					<div class="custom_select1">
+						<select >
+						  <option disabled selected value="">Kategorija</option >
+						  <option value="">Stan</option>
+						  <option value="">Kuca</option>
+						  <option value="">Poslovni prostor</option>
+						  <option value="">Poslovna zgrada</option>
+						  <option value="">Restoran</option>
+						  <option value="">Plac </option>
+						  <option value="">Vikendica</option>
+						  <option value="">Magacin</option>
+						  <option value="">Hala</option>
+						  <option value="">Garaza</option>
+						  <option value="">Poslovni objekat</option>
+						  <option value="">Stambeni objekat</option>
+						  <option value="">Parking</option>
+						  <option value="">Vila</option>
+						  <option value="">Ostalo</option>
+						</select>
+					  </div>
+					  <div class="custom_select1">
+						<select>
+						  <option disabled selected value="">Struktura</option>
+						  <option value="">Garsonjera</option>
+						  <option value="">Jednosoban</option>
+						  <option value="">Dvosoban</option>
+						  <option value="">Trosoban</option>
+						  <option value="">Cetvorosoban</option>
+						  
+						  <option value="">Vise</option>
+						</select>
+					  </div>
+					  <div class="custom_select1">
+						<select>
+						  <option disabled selected value="">Uvrstena u</option>
+						  <option value="">Prodaja</option>
+						  <option value="">Izdavanje</option>
+						  <option value="">Dnevni najam</option>
+						  <option value="">Ekskluzivno</option>
+						  <option value="">Sezonski</option>
+						  
+						  <option value="">Drugo</option>
+						</select>
+					  </div>
+					<input type="button"   name="next" class="next action-button" value="Sledece"  >
+					
+						
+				</fieldset>
+				<fieldset>
+					<h2 class="title">Fotografije</h2>
+					
+                    
+                    <div class="container11">
+                        <input type="file" id="file-input" accept="image/png, image/jpeg" onchange="preview()" multiple>
+                        <label class="ubacislike" for="file-input">
+                            <i class="fas fa-upload"></i> &nbsp; Dodaj slike
+                        </label>
+                        <p id="num-of-files">Nema izabranih slika</p>
+                        <div id="images"></div>
+                    </div>
+                    
+                        
+                      
+					<p class="tekstt">Dodajte najmanje 2 fotografije </p>
+
+					<input type="button" name="previous" class="previous action-button-previous" value="Prethodno">
+
+
+					<input type="button" name="next" class="next action-button" value="Sledece">
+				</fieldset>
+				<fieldset>
+					<h2 class="title">Lokacija</h2>
+
+					<iframe class="mapa3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2951.839915634567!2d18.857187315414812!3d42.281940479192194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134dd5ae97cd456d%3A0x7aca65db967bd744!2sHarmonia%20Budva!5e0!3m2!1ssr!2s!4v1630861094197!5m2!1ssr!2s" width="95%" height="700"  allowfullscreen="" loading="lazy"></iframe>
+					<input  type="text" class="input1" name="Mobile" placeholder="Geografska duzina">
+					<input type="text" class="input1" name="Email" placeholder="Geografska sirina">
+
+					<input type="button" name="previous" class="previous action-button-previous" value="Prethodno">
+
+
+					<input type="button" name="next" class="next action-button" value="Sledece">
+				</fieldset>
+				<fieldset>
+					<h2 class="title">Detalji</h2>
+					<input type="text" class="input1" name="Street" placeholder="Kvadratura nekretnine">
+					<input type="text"class="input1"  name="City" placeholder="Kvadratura zemljista">
+					<input type="text" class="input1" name="City" placeholder="Broj prostorija">
+					<input type="text" class="input1" name="City" placeholder="Broj soba">
+					<input type="text" class="input1" name="City" placeholder="Broj kupatila">
+					<input type="text" class="input1" name="City" placeholder="Broj balkona">
+					<ul class="checkboxes22">
+						<li><label><input type="checkbox" name="text1" value="Ivan" />  Klima</label></li>
+						<li><label><input type="checkbox" name="text2" value="value2" />  Dvoriste</label></li>
+						<li><label><input type="checkbox" name="text3" value="value3" />  Sala</label></li>
+						<li><label><input type="checkbox" name="text4" value="value4" />  Lift</label></li>
+						<li><label><input type="checkbox" name="text5" value="value5" />  Fitnes</label></li>
+						<li><label><input type="checkbox" name="text6" value="value6" />  Teretana</label></li>
+						<li><label><input type="checkbox" name="text7" value="value7" />  Vrtic</label></li>
+						<li><label><input type="checkbox" name="text8" value="value8" />  Parking</label></li>
+						<li><label><input type="checkbox" name="text9" value="value8" />  Skola</label></li>
+						<li><label><input type="checkbox" name="text10" value="value8" />  Solarni panel</label></li>
+						<li><label><input type="checkbox" name="text11" value="value8" />  Supermarket</label></li>
+						<li><label><input type="checkbox" name="text12" value="value8" />  Basta</label></li>
+						<li><label><input type="checkbox" name="text13" value="value8" />  Bazen </label></li>
+						<li><label><input type="checkbox" name="text14" value="value8" />  Pogled na more</label></li>
+						<li><label><input type="checkbox" name="text15" value="value8" />  Balkon</label></li>
+						<li><label><input type="checkbox" name="text16" value="value8" />  Masina za sude</label></li>
+						<li><label><input type="checkbox" name="text17" value="value8" />  Stepeniste</label></li>
+						<li><label><input type="checkbox" name="text18" value="value8" />  Centralno grijanje</label></li>
+						<li><label><input type="checkbox" name="text19" value="value8" />  Podno grijanje</label></li>
+						<li><label><input type="checkbox" name="text20" value="value8" />  Spa</label></li>
+						<li><label><input type="checkbox" name="text21" value="value8" />  Ves masina</label></li>
+						<li><label><input type="checkbox" name="text22" value="value8" />  Potkrovlje</label></li>
+						<li><label><input type="checkbox" name="text23" value="value8" />  Kamin</label></li>
+						<li><label><input type="checkbox" name="text24" value="value8" />  Konsijerz</label></li>
+						<li><label><input type="checkbox" name="text25" value="value8" />  Garaza</label></li>
+						<li><label><input type="checkbox" name="text26" value="value8" />  WiFi</label></li>
+						<li><label><input type="checkbox" name="text27" value="value8" />  Restoran</label></li>
+						<li><label><input type="checkbox" name="text28" value="value8" />  Kablovska televizija</label></li>
+					  </ul>
+
+					<input type="button" name="previous" class="previous action-button-previous" value="Prethodno">
+
+
+					<input type="submit" name="submit" class="submit action-button" value="Objavi">
+				</fieldset>
+				
+				
+			</form>
+			
+		</div>
+		
+	</div>
+
+</div>
+    
+
+
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+            integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+            crossorigin="anonymous"></script>
+        <script src="theme/js/bootstrap.min.js"></script>
+        <script src="theme/js/owl.carousel.min.js"></script>
+        <script src="theme/js/jquery.fancybox.min.js"></script>
+        <script src="theme/js/jquery.enllax.min.js"></script>
+
+        <script src="objava.js"></script>
+        
+        <script src="preview.js"></script>
+        
+
+        
+
+
+
+
+</body>
+
+</html>
